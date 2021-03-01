@@ -1,0 +1,48 @@
+
+nav {
+    margin: 10px;
+    padding: 10px;
+    tab-size: 100px;
+}
+
+li {
+    display: inline;
+    margin: 40px;
+    font-size: 30px;
+  }
+
+  a:visited {
+    color: rgb(167, 180, 89);
+      
+  }
+
+main {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+main > h1, p, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+body {
+    background-image: url('img_girl.jpg');
+  }body {
+  background-image: url('https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/31121724/fashion-1024x682.jpeg');
+}
+
+li {
+    display: inline;
+    margin: 50px;
+  }
