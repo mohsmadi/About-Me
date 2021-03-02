@@ -1,14 +1,36 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-nav {
+.nav-part1 {
+  float: left;
+}
+
+.nav-part1 a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* nav {
     margin: 10px;
     padding: 10px;
     tab-size: 100px;
-}
+} */
 
 li {
-    display: inline;
+    color: rgb(73, 82, 27);
     margin: 40px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   a:visited {
@@ -42,7 +64,10 @@ body {
   background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-11-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1d2c8b7a4644da738e63e866b7210855');
 }
 
-li {
-    display: inline;
-    margin: 50px;
-  }
+
+dl {
+  margin: 50px;
+  color: rgb(73, 82, 27);
+  display: inline;
+}
+
