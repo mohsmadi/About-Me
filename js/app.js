@@ -1,31 +1,41 @@
 'use strict'
 
-let str = "Hello Clint!";
-let  = str.toLocaleUpperCase();
+let Ans;
+let r = confirm("Warm Greetings!");
+if (r == true) {
+  Ans = "You pressed OK!";
+} else {
+  Ans = "You pressed Cancel!";
+}
 
-let clintName = prompt("Please enter your name", "Mohammad");
+//let userName = prompt("Please enter your name", "Mohammad!");
 
-if (clintName != null) {
-  document.getElementById("demo").innerHTML =
-  "Hello " + clintName + "! How are you today?";
+//if (userName != 0) {
+ // document.getElementById("demo").innerHTML =
+ // "Hello " + userName + "! See You Around?";
+//}
+
+let YourName = prompt("What's your Namer?");
+
+if (YourName.toLowerCase() == "scorpion") {
+  alert("Wow! Great to See YOU Here!");
+}
+
+let favCare = prompt("What's Favourit Care?");
+
+if (favCare.toLowerCase() == "scorpion") {
+  alert("Wow! I like it TOO!");
+}
+
+let favPhone = prompt("What's Favourit Phone?");
+
+if (favCare.toLowerCase() == "scorpion") {
+  alert("It's So Cool!");
 }
 
 
-let name=prompt("Clint Name");
-alert (" hello + name");
-
-let order1=prompt('enter price of order 1')
-let order2=prompt('enter price of order 2')
-alert ( order1+order2)
 
 
-
-
-
-
-
-
-
-
-let str = "Thank You!";
-let res = str.toLowerCase();
+if (window.confirm("Do you really want to leave?")) {
+  window.open("exit.html", "Thanks for Visiting!");
+}
