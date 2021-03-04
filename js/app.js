@@ -1,55 +1,59 @@
 'use strict';
 
-welcom Onboard
-let userName = prompt("Your Name ?");
-alert(" MOST WELCOME " + userName)
+//welcom Onboard
+let userName = prompt('Your Name ?');
+alert(' MOST WELCOME ' + userName);
 
 // try know me!
-let questionOne= prompt ( 'Do You Like summer');
-    questionOne=questionOne.toUpperCase()
-let count_no=0
-let count_yes=0
-console.log(questionOne)
+
+function question1(){
+let questionOne= prompt ( 'Do You think I Like summer');
+    questionOne=questionOne.toUpperCase();
+let count_no=0;
+let count_yes=0;
+console.log(questionOne);
 if (questionOne==='No'|| questionOne==='N')
    {
     alert ('Its! Great');
-    count_no=count_no+1
+    count_no=count_no+1;
   } 
 else {   console.log( 'Oops!' );
 alert('You Dont Got It');
-count_yes=count_yes+1
+count_yes=count_yes+1;
 }
+} question1();
 
-
-let   questionTwo= prompt ( 'Do You Like Move')
-  questionTwo=questionTwo.toUpperCase()
+function question2(){
+let   questionTwo= prompt ( 'Do You think I Like Move');
+  questionTwo=questionTwo.toUpperCase();
   if (questionTwo==='Yes'|| questionTwo==='Y')
    {
     console.log ('Yeah! Me Too!');
     alert ('You Got It');
-    count_yes=count_yes+1
+    count_yes=count_yes+1;
   } 
 else { 
-  count_no=count_no+1
+  count_no=count_no+1;
 alert('You Dont Got It');
 }
+} question2();
 
-
-let   questionThree= prompt ( 'Do You Like RealMadrid');
-  questionThree=questionThree.toUpperCase()
-
+function question3(){
+let   questionThree= prompt ( 'Do think I Like RealMadrid');
+  questionThree=questionThree.toUpperCase();
   if (questionThree==='Yes'|| questionThree==='Y')
    {
     console.log ('Yeah! Me Too!');
     alert ('You Got It');
-    count_yes=count_yes+1
-  } 
-else {   console.log( 'Oops!' );
+    count_yes=count_yes+1;
+  }
+  else {   console.log( 'Oops!' );
+count_no=count_no+1;
 alert('You Dont Got It');
-count_no=count_no+1
 }
+} question3();
 
-
+function question4(){
 let   questionFour= prompt ( 'Do You Like Pizza');
   questionFour=questionFour.toUpperCase()
 
@@ -64,8 +68,9 @@ else {   console.log( 'Oops!');
 alert('You Dont Got It');
 count_no=count_no+1
 }
+} question4;
 
-
+function question5(){
 let   questionFive= prompt ( 'Do You Like Transportaion');
   questionFive=questionFive.toUpperCase()
   if (questionFive==='NO'|| questionFive==='N')
@@ -78,13 +83,12 @@ else {   console.log( 'Oops!');
 count_yes=count_yes+1
 alert('You Dont Got It');
 }
-
+}question5;
 
 console.log("count_yes",count_yes)
 console.log("count_no",count_no)
 
-gussing Number
-
+function guessingNumber(){
 let guessNumber=10;
 let count=0
 let guestGuess1=prompt('Challenge You ! Knowing My Number....');
@@ -120,9 +124,9 @@ if (guestGuess1<10){
 
 console.log(x)
 }
-
+}guessingNumber();
 // q7
-
+function favourite(){
 let movie=['suits','the doctor','dark','vis a vis','guest'];
 let guess=0;
 while(guess<6)
@@ -147,5 +151,4 @@ if (guess>6 && userCorrect===false){
   alert('Oops!')
 }
 
-
-}
+}favourite();
