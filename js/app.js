@@ -1,154 +1,142 @@
 'use strict';
 
-//welcom Onboard
-let userName = prompt('Your Name ?');
-alert(' MOST WELCOME ' + userName);
+let Name=prompt(' What is your name ? ');
+alert ('Welcome'+ ' '+ Name + ' '+ 'to my site');
+console.log(Name);
+let score=0;
 
-// try know me!
+function questionOne(){
+  let Guess1=prompt('Do you think I am Real Madrid Fans (Yes/No)? ').toLowerCase();
+  if (Guess1==='yes' || Guess1==='y' || Guess1==='Yes' || Guess1==='YES' || Guess1=== 'Y'){
+    alert ('You git it! I am Madridista  ');
+    console.log(Guess1);
+    score=score+1;
+  }else if (Guess1==='no' || Guess1==='n' || Guess1==='No' || Guess1==='NO' || Guess1=== 'N'){
+    alert ('Oops! Vamoooooos Real');
+    console.log(Guess1);
+  }else {alert('No, Nope!');
+  questionOne();}}
+  questionOne();
 
-function question1(){
-let questionOne= prompt ( 'Do You think I Like summer');
-    questionOne=questionOne.toUpperCase();
-let count_no=0;
-let count_yes=0;
-console.log(questionOne);
-if (questionOne==='No'|| questionOne==='N')
-   {
-    alert ('Its! Great');
-    count_no=count_no+1;
-  } 
-else {   console.log( 'Oops!' );
-alert('You Dont Got It');
-count_yes=count_yes+1;
-}
-} question1();
+function questionTwo(){
+  let Guess2=prompt(' Do you think I love Summer, (Yes/No) ?').toLowerCase();
+  if (Guess2==='yes' || Guess2==='y' || Guess2==='Yes' || Guess2==='YES' || Guess2==='Y'){
+    alert ('No! actully I did not ');
+    console.log(Guess2);
+  }else if(Guess2==='no' || Guess2==='n' || Guess2==='No' || Guess2==='NO' || Guess2=== 'N'){
+    alert ('You are Amazing, I love winnter');
+    console.log(Guess2);
+    score=score+1;
+  }else {alert('No, Nope!');
+    questionTwo();}}
+  questionTwo();
 
-function question2(){
-let   questionTwo= prompt ( 'Do You think I Like Move');
-  questionTwo=questionTwo.toUpperCase();
-  if (questionTwo==='Yes'|| questionTwo==='Y')
-   {
-    console.log ('Yeah! Me Too!');
-    alert ('You Got It');
-    count_yes=count_yes+1;
-  } 
-else { 
-  count_no=count_no+1;
-alert('You Dont Got It');
-}
-} question2();
 
-function question3(){
-let   questionThree= prompt ( 'Do think I Like RealMadrid');
-  questionThree=questionThree.toUpperCase();
-  if (questionThree==='Yes'|| questionThree==='Y')
-   {
-    console.log ('Yeah! Me Too!');
-    alert ('You Got It');
-    count_yes=count_yes+1;
+function questionThree(){
+  let Guess3=prompt('Do you think I like Pizza ,(Yes/No)? ').toLowerCase();
+  if (Guess3==='yes' || Guess3==='y' || Guess3==='Yes' || Guess3==='YES' || Guess3==='Y'){
+    alert ('Yes you are Right I am a Pitzzaroooo ');
+    console.log(Guess3);
+    score=score+1;
+  }else if(Guess3==='no' || Guess3==='n' || Guess3==='No' || Guess3==='NO' || Guess3=== 'N'){
+    alert ('Nope ! You Did not Knowing me Well');
+    console.log(Guess3);
+  }else {alert('No, Nope!');
+    questionThree();}}
+questionThree();
+
+function questionFour(){
+  let Guess4=prompt(' Do you think I am Salesman   ,(Yes/No) ? ').toLowerCase();
+  if (Guess4==='yes' || Guess4==='y' || Guess4==='Yes' || Guess4==='YES' || Guess4==='Y'){
+    alert ('No ! I am Accountant ');
+    console.log(Guess4);
+  }else if(Guess4==='no' || Guess4==='n' || Guess4==='No' || Guess4==='NO' || Guess4=== 'N'){
+    alert ('You are Right, I am Accountant');
+    console.log(Guess4);
+    score=score+1;
+  }else {alert('No, Nope!!');
+    questionFour();}}
+questionFour();
+
+function questionFive(){
+  let Guess5=prompt(' Do you Thing Iam good Chess Player ,(Yes/No) ? ').toLowerCase();
+  if (Guess5==='yes' || Guess5==='y' || Guess5==='Yes' || Guess5==='YES' || Guess5==='Y'){
+    alert ('Cool! lets play it Oneday! ');
+    console.log(Guess5);
+    score=score+1;
+  }else if(Guess5==='no' || Guess5==='n' || Guess5==='No' || Guess5==='NO' || Guess5=== 'N'){
+    alert ('As you like! but here is my page if want to see it later');
+    console.log(Guess5);
+  }else {alert('No, Nope!!');
+    questionFive();}}
+questionFive();
+
+
+function guessNumber (){
+  let luckyNumber=9;
+  let guessLucky=prompt('Guess my lucky Numbe');
+  let i =0;
+  guessLucky=parseInt(guessLucky);
+  console.log(guessLucky);
+  if (parseInt(guessLucky)===luckyNumber){
+    alert('Great you got it');
+    score=score+1;
   }
-  else {   console.log( 'Oops!' );
-count_no=count_no+1;
-alert('You Dont Got It');
-}
-} question3();
-
-function question4(){
-let   questionFour= prompt ( 'Do You Like Pizza');
-  questionFour=questionFour.toUpperCase()
-
-  if (questionFour==='yes'|| questionFour==='y')
-   {
-    console.log ('Yeah! Me Too!');
-    alert ('You Got It');
-    count_yes=count_yes+1
-    
-  } 
-else {   console.log( 'Oops!');
-alert('You Dont Got It');
-count_no=count_no+1
-}
-} question4;
-
-function question5(){
-let   questionFive= prompt ( 'Do You Like Transportaion');
-  questionFive=questionFive.toUpperCase()
-  if (questionFive==='NO'|| questionFive==='N')
-   {
-    console.log ('Yeah! Me Too!');
-    alert ('You Got It');
-    count_no=count_no+1
-  } 
-else {   console.log( 'Oops!');
-count_yes=count_yes+1
-alert('You Dont Got It');
-}
-}question5;
-
-console.log("count_yes",count_yes)
-console.log("count_no",count_no)
-
-function guessingNumber(){
-let guessNumber=10;
-let count=0
-let guestGuess1=prompt('Challenge You ! Knowing My Number....');
-
-let i=0
-while(i<4){
-let x=guestGuess1
-let x=temp
-let guestoGuess1=x
-
-console.log("x",x)
-//    console.log(x)
-//   console.log(i)
-if(guestoGuess1==10){
-alert("you done")
-break;
-
-} 
-if (guestGuess1>10){
-  alert("tooo High")
-  var x=prompt('Challenge You ! Knowing My Number....');
-  var temp=x
-  i=i+1
-
-}
-if (guestGuess1<10){
-  alert(" too small")
-  var f=prompt('Challenge You ! Knowing My Number....');
-  var temp=f
-  i=i+1
-}
-
-
-console.log(x)
-}
-}guessingNumber();
-// q7
-function favourite(){
-let movie=['suits','the doctor','dark','vis a vis','guest'];
-let guess=0;
-while(guess<6)
-let movieResponse=prompt('What is the Top Movie!');
-for (let i=0;i<movie.length;i++){
-  if (movieResponse===movie[i]){
-    alert('You get it');
-    guess=6;
-    userScore+=1;
-    userCorrect=true;
-    break;
+  while(parseInt(guessLucky)!==luckyNumber && i<3){
+    alert('My Lucky Number is between 0 & 20');
+    if (parseInt(guessLucky)>luckyNumber){
+      alert('No! its Too High');
+      console.log(guessLucky);
+      guessLucky=prompt('Guess my lucky Numbe');
+      if (parseInt(guessLucky)===luckyNumber){
+        alert('WoooW ! You got it');
+        score=score+1;
+        break;
+      }else{
+        i++;
+      }
+    }else if (parseInt(guessLucky)<luckyNumber){
+      alert('No! its Too Small');
+      console.log(guessLucky);
+     guessLucky=prompt('Guess my lucky Numbe');
+      if (parseInt(guessLucky)===luckyNumber){
+        alert('Great you got it');
+        score=score+1;
+        break;
+      }else{
+        i++;
+      }
+    }
   }
-  if (guess!==7){
-    movieResponse=prompt('not yet!');
-  }
-}
-guess++;
-if (guess< 6 && userCorrect===false){
-  alert ('You Did not get it');
-}
-if (guess>6 && userCorrect===false){
-  alert('Oops!')
-}
+  alert('My lucky Number 9 ');
+}guessNumber();
+  
 
-}favourite();
+function favouriteSeries(){
+  let aSeries=['SUITS','THE DOCTOR','DARK','VIS A VIS',];
+  let y=0;
+  let favouritSeries=prompt('Guess one of My Favourite Series');
+  console.log(favouritSeries);
+   favouritSeries=favouritSeries.toUpperCase();
+  if (favouritSeries===aSeries[0] || favouritSeries===aSeries[1] || favouritSeries===aSeries[2] || favouritSeries===aSeries[3]){
+    alert('Cool!! its one of My Favourits '+ favouritSeries);
+     score=score+1;
+  }else{
+    while((favouritSeries!==aSeries[0] || favouritSeries!==aSeries[1] || favouritSeries!==aSeries[2] || favouritSeries!==aSeries[3]) && y<5){
+      alert('One of them its help pepole to be Helthy');
+      favouritSeries=prompt('Guess one of My Favourite Series');
+      if (favouritSeries===aSeries[0] || favouritSeries===aSeries[1] || favouritSeries===aSeries[2] || favouritSeries===aSeries[3]){
+        alert('Cool!! its one of My Favourits '+ favouritSeries);
+       score=score+1;
+      }
+      console.log(favouritSeries);
+      y=y+1;
+    }
+    alert ('Top of the a Series '+ aSeries);
+  }
+  } 
+
+  favouriteSeries();
+  alert('Your score is '+ score);
+  alert ('YOU ARE DO IT' + ' ' + Name + ' '+ 'You Have to Watch it, Enjoy! ');
+
